@@ -1,5 +1,5 @@
 # Yolov5demo
-yolo5安卓移植demo
+yolo5 training model migration demo
 
 Just change assets's ".tflite" model file and ".txt" label file is enough,name it as I "test"'s it.
 
