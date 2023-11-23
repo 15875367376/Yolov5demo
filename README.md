@@ -1,11 +1,12 @@
 # Yolov5demo
 yolo5安卓移植demo
 
-只需换assets的.tflite模型文件和.txt标签文件即可，命名按照我test的的命名
+Just change assets's ".tflite" model file and ".txt" label file is enough,name it as I "test"'s it.
 
 
-如果要自己命名需要更改需要自己改动DetectorFactor.java的     "test.tflite" 和  "file:///android_asset/test.txt"
+If you want to name yourself you need to change it you need to change it yourself "DetectorFactor.java"'s   "test.tflite" and  "file:///android_asset/test.txt"
 
+Here is the corresponding code snippet:
 else if (modelFilename.equals("test.tflite")) {
             labelFilename = "file:///android_asset/test.txt";
             isQuantized = true;
@@ -17,8 +18,9 @@ else if (modelFilename.equals("test.tflite")) {
             };
         }
             
-以及yolov5demo的   "test.tflite"
+As well as "yolov5demo.java"'s   "test.tflite"
 
+Here is the corresponding code snippet:
 detector = DetectorFactory.getDetector(this.a,"test.tflite");  
 
-然后直接运行项目即可
+Then run the project directly.
